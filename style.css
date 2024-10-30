@@ -1,0 +1,146 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: tahoma;
+  background: rgb(150, 41, 27);
+  background: linear-gradient(
+    245deg,
+    rgb(153, 32, 16) 0%,
+    rgb(236, 88, 68) 99%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#container {
+  text-align: center;
+  margin: 10rem auto;
+}
+
+#container .check-icon {
+  display: block;
+}
+
+.box {
+  box-sizing: border-box;
+  width: 40rem;
+  height: auto;
+  background: #ffd0a5;
+  padding: 4rem 0;
+  margin: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 25px #632525;
+}
+
+#heading {
+  font-size: 3.5rem;
+  color: white;
+  margin-top: 0rem;
+  margin-bottom: 5rem;
+}
+
+ul {
+  padding: 0;
+}
+
+.list-item {
+  border-radius: 1rem;
+  background: white;
+  font-size: 1.5rem;
+  list-style: none;
+  text-align: left;
+  padding: 1.5rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-text {
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.delete-button {
+  border: 0;
+  background-color: #fb8239;
+  padding: 0.7rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  color: white;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.delete-button:hover {
+  box-shadow: 0 0 1rem #fb8239;
+}
+
+.delete-button:active {
+  background: #e75710;
+}
+
+#input {
+  width: 25rem;
+  height: 2rem;
+  padding: 1.5rem;
+  border: 0;
+  outline: none;
+  border-radius: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+#input:hover {
+  box-shadow: 0 0 10px 1px white;
+}
+
+#input:focus {
+  border: #fb8239 solid 0.2rem;
+}
+
+#add-book {
+  margin-top: 4rem;
+}
+
+.add-button {
+  background: #ff8e48;
+  color: white;
+  width: 8rem;
+  height: 5rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 1rem;
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.add-button:hover {
+  box-shadow: 0 0 10px 2px #fca772;
+}
+
+.add-button:active {
+  background: #e05008;
+  color: white;
+}
+
+.add-button_icon {
+  transition: transform 0.5s;
+}
+
+.add-button:hover .add-button_icon {
+  transform: rotate(180deg);
+}
+
+#error-text-con {
+  text-align: left;
+  padding: 0.7rem 2rem;
+  color: #da0a0a;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.error {
+  border: red solid 2px;
+  box-shadow: 0 0 10px 5px #ff4747;
+}
